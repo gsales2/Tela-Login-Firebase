@@ -3,3 +3,32 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+header {
+    text-align: center;
+    background-color: gainsboro;
+    height: 120px;
+    line-height: 120px;
+}
+
+.main-title {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+    width: 50%;
+    height: auto;
+    margin: 50px auto;
+    background-color: gainsboro;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.container-login h2 {
+    
+}
