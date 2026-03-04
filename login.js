@@ -14,12 +14,26 @@ const mensagemAlerta = document.getElementById('mensagem-alerta');
 btnRegistrar.addEventListener('click', () => {
     const emailDigitado = emailInput.value;
     const senhaDigitada = senhaInput.value;
-    console.log(emailDigitado)
-    console.log(senhaDigitada)
     createUserWithEmailAndPassword(auth, emailDigitado, senhaDigitada)
         .then((userCredential) => {
             alert('Conta Criada com sucesso!');
             console.log("Sucesso:", userCredential.user);
+        })
+        .catch((error) => {
+            alert('Erro:' + error.message);
+        })
+})
+
+btnEntrar.addEventListener('click', () => {
+    const emailDigitado = emailInput.value;
+    const senhaDigitada = senhaInput.value;
+
+    signInWithEmailAndPassword(auth, emailDigitado, senhaDigitada)
+        .then((userCredential) => {
+            alert('Login realizado com sucesso');
+            console.log("Sucesso:", userCredential.user);
+
+            window.location.href = "logado.html"
         })
         .catch((error) => {
             alert('Erro:' + error.message);
