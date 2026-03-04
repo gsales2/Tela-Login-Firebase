@@ -111,3 +111,7 @@ header {
     font-weight: 300;
     display: none;
 }
+
+.pagina-protegida {
+    display: none;
+}

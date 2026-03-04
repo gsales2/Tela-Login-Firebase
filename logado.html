@@ -11,12 +11,15 @@
         <h1 class="main-title">Logado!</h1>
     </header>
 
-    <main>
+    <main id="conteudo-privado" class="pagina-protegida">
         <div class="container-login">
             <h2>Parabéns pelo login!</h2>
+            <button onclick="logout()" class="botao-principal" style="background: gray; margin-top: 20px;">Sair</button>
         </div>
     </main>
 
     <footer></footer>
+
+    <script type="module" src="auth-guard.js"></script>
 </body>
 </html>
