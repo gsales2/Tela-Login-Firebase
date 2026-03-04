@@ -105,3 +105,9 @@ header {
 .botao-registro:active {
     color: purple;
 }
+
+.mensagem-erro {
+    color: red;
+    font-weight: 300;
+    display: none;
+}
