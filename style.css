@@ -5,13 +5,12 @@
 }
 
 body {
-    background-color: #A52A2A;
+    background-color: #afafaf;
 }
 
 header {
     text-align: center;
-    background-color: #902424;
-    border-bottom: 1px solid black;
+    background-color: #6b6b6b;
     height: 120px;
     line-height: 120px;
     color: white;
@@ -20,6 +19,8 @@ header {
 .main-title {
     font-size: 2rem;
     font-weight: 800;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 .container-login {
@@ -34,11 +35,12 @@ header {
     border-radius: 8px;
     padding: 20px;
     align-items: center;
+    box-shadow: 1px 1px 50px gray;
 }
 
 .container-login h2 {
     color: rgb(57, 57, 57);
-    text-decoration: underline;
+    text-shadow: 1px 1px 2px gray;
 }
 
 .default-input {
@@ -80,12 +82,12 @@ header {
     justify-content: center;
     line-height: 1;
     border: none;
+    text-shadow: 1px 1px 2px black;
 }
 
 .botao-principal:hover {
     transform: translateY(-3px);
     background: #e94560;
-    color: black;
 }
 
 .botao-registro {
